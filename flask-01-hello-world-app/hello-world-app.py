@@ -6,8 +6,6 @@ app = Flask(__name__)
 def hello():
     return "Hello World from Flask!!!"
 
-
-
 @app.route('/second')
 def second():
     return 'Karakartal!!!!'
@@ -20,7 +18,7 @@ def third():
 
 @app.route('/forth/<string:id>')
 def forth(id):
-    return f'id number of this page is {id}!!!!'
+    return f'id number of this page is {id}'
 
 
 
