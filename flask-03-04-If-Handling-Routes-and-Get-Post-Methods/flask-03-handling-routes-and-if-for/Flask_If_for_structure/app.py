@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/")
 def head():
     first="This is my first conditions experience"
-    return render_template("index.html", message = first)
+    return render_template("index.html", message=first)
 
 
 # Create a function named header which prints numbers elements of list one by one in `index.html` 
@@ -16,7 +16,7 @@ def head():
 @app.route("/serdar")
 def header():
     names =["Serdar", "Sam", "Jasper"]
-    # numbers = range(1.11)
+    # numbers = range(1, 11)
     return render_template("body.html", object = names)
 
 
